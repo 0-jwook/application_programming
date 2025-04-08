@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>Item Details</title>
+</head>
+<body>
+    {% for i in range(5)%}
+        <p>item_name:test_item_{{i}} item_price:{{i}}.0</p>
+    {% endfor %}
+    {% for i in all_items%}
+        <p>item_name:{{i}} item_price:{{all_items[i]}}</p>
+    {% endfor %}
+</body>
+</html>
