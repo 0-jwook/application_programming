@@ -7,7 +7,7 @@ from pydantic import BaseModel
 app = FastAPI()
 
 # jinja2 Template 생성. 인자로 directory 입력
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="Templates")
 
 class Item(BaseModel):
     name: str

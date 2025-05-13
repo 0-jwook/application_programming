@@ -52,7 +52,7 @@ try:
 except ValueError as e:
     print(e)
 
-# pip install pydantic-extra-types pycountry
+# pip install Pydantic-extra-types pycountry
 from pydantic_extra_types.country import CountryAlpha3
 
 class Product(BaseModel):

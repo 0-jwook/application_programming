@@ -12,4 +12,4 @@ async def run_task():
 
 @app.get("/quick")
 async def quick_response():
-    return {"status": "quick response"}
+    return {"status": "quick Response"}

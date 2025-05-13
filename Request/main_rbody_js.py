@@ -7,7 +7,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/Static", StaticFiles(directory="Static"), name="Static")
 
 app.add_middleware(
     CORSMiddleware,
@@ -56,7 +56,7 @@ class User(BaseModel):
     #full_name: str | None = None
     full_name: Optional[str] = None
 
-# 여러개의 request body parameter 처리. 
+# 여러개의 Request body parameter 처리.
 # json 데이터의 이름값과 수행함수의 인자명이 같아야 함.  
 @app.put("/items_mt/{item_id}")
 async def update_item_mt(item_id: int, item: Item, user: User):

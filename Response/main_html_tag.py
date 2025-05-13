@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="Templates")
 
 @app.get("/read_safe", response_class=HTMLResponse)
 async def read_safe(request: Request):
