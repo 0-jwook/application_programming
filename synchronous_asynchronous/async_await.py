@@ -14,12 +14,12 @@ async def quick_response():
 # ----------------
 async def long_running_task():
     await asyncio.sleep(5)        
-    return {"status": "long_running task completed"}
+    print("Async task completed")
 
 @app.get("/async_task")
 async def run_task():
-    result = await long_running_task()
-    return result
+    await long_running_task()
+    return {"status": "long_running task completed"}
 
 #--------------------
 def long_running_task2():
